@@ -8,6 +8,9 @@ require_once 'templete/header.php';
 
 <main class="main">
     <div class="container">
+        <div class="link__inner">
+            <a href="mypage.php" class="return__link">＞マイページへ戻る</a>
+        </div>
 
         <!-- フォーム -->
         <form method="POST" class="form form__pass-edit">
