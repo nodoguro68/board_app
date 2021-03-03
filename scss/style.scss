@@ -1,0 +1,35 @@
+@import 'base/reset';
+@import 'variables/color';
+@import 'variables/font-size';
+@import 'modules/button';
+@import 'modules/header';
+@import 'modules/sidebar';
+@import 'modules/footer';
+@import 'modules/form';
+@import 'modules/card';
+@import 'modules/post';
+@import 'modules/search';
+@import 'modules/profile';
+
+// モバイルのスタイルを最初に読み込む
+@import 'base/base';
+
+// タブレット
+@media screen and (min-width: 600px){
+    @import 'breakpoints/600up';
+}
+
+// 小さいパソコン
+@media screen and (min-width: 960px){
+    @import 'breakpoints/960up';
+}
+
+// 普通のパソコン
+@media screen and (min-width: 1280px){
+    @import 'breakpoints/1280up';
+}
+
+// retinaディスプレイ
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+      @import "breakpoints/_2x";
+}
