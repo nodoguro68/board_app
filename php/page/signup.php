@@ -31,7 +31,7 @@ require_once 'templete/header.php';
                     <span class="err-msg"></span>
                 </div>
                 <div class="form__group">
-                    <label class="form__label">パスワード（再入力）</label>
+                    <label class="form__label">パスワード（確認）</label>
                     <input type="password" name="pass_re" value="" class="form__input" id="pass_re">
                     <span class="err-msg">></span>
                 </div>
