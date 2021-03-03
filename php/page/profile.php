@@ -32,8 +32,4 @@ require_once 'templete/header.php';
 
     </div>
 </main>
-
 <?php require_once 'templete/footer.php';?>
-
-</body>
-</html>

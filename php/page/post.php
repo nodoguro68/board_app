@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $page_title = '新規投稿ページ';
 
@@ -6,40 +6,37 @@ require_once 'templete/head.php';
 require_once 'templete/header.php';
 ?>
 
-    <main class="main">
-        <div class="container">
+<main class="main">
+    <div class="container">
 
-            <form method="POST" class="form form__post" enctype="multipart/form-data">
-                <div class="form__header">
-                    <h2 class="title form__title">新規投稿</h2>
+        <form method="POST" class="form form__post" enctype="multipart/form-data">
+            <div class="form__header">
+                <h2 class="title form__title">新規投稿</h2>
+            </div>
+            <div class="form__main">
+                <div class="err-msg__area">
+                    <span class="err-msg"></span>
                 </div>
-                <div class="form__main">
-                    <div class="err-msg__area">
-                        <span class="err-msg"></span>
-                    </div>
-                    <div class="form__group-img">
-                        <label class="form__label">画像を選択</label>
-                        <input type="hidden" name="MAX_FILE_SIZE" value="1048576">
-                        <input type="file" name="post" class="img-file" id="imgFile">
-                        <img src="" class="preview" id="preview" alt="プレビュー画像">
-                    </div>
-                    <div class="form__group">
-                        <textarea name="comment" id="comment" class="comment" placeholder="コメントを入力"></textarea>
-                        <span class="err-msg"></span>
-                    </div>
-                    <div class="counter__area">
-                        <span class="count" id="counter">0</span>/200
-                    </div>
+                <div class="form__group-img">
+                    <label class="form__label">画像を選択</label>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="1048576">
+                    <input type="file" name="post" class="img-file" id="imgFile">
+                    <img src="" class="preview" id="preview" alt="プレビュー画像">
                 </div>
-                <div class="form__foot">
-                    <input type="submit" name="post" value="投稿" class="btn-submit">
+                <div class="form__group">
+                    <textarea name="comment" id="comment" class="comment" placeholder="コメントを入力"></textarea>
+                    <span class="err-msg"></span>
                 </div>
-            </form>
+                <div class="counter__area">
+                    <span class="count" id="counter">0</span>/200
+                </div>
+            </div>
+            <div class="form__foot">
+                <input type="submit" name="post" value="投稿" class="btn-submit">
+            </div>
+        </form>
 
-        </div>
-    </main>
+    </div>
+</main>
 
 <?php require_once 'templete/footer.php'; ?>
-
-</body>
-</html>
