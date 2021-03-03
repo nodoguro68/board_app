@@ -1,4 +1,5 @@
 vendor
 node_modules
 source/php/php.log
+css/style.css
 css/style.css.map
