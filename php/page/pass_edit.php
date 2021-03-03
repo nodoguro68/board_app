@@ -19,8 +19,8 @@ require_once 'templete/header.php';
             </div>
             <div class="form__main">
                 <div class="form__group">
-                    <label class="form__label">古いパスワード</label>
-                    <input type="password" name="old_pass" value="" class="form__input" id="pass">
+                    <label class="form__label">現在のパスワード</label>
+                    <input type="password" name="current_pass" value="" class="form__input" id="pass">
                     <span class="err-msg"></span>
                 </div>
                 <div class="form__group">
@@ -29,7 +29,7 @@ require_once 'templete/header.php';
                     <span class="err-msg"></span>
                 </div>
                 <div class="form__group">
-                    <label class="form__label">新しいパスワード（再入力）</label>
+                    <label class="form__label">新しいパスワード（確認）</label>
                     <input type="password" name="new_pass_re" value="" class="form__input" id="new_pass_re">
                     <span class="err-msg">></span>
                 </div>
